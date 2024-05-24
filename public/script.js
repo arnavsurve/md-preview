@@ -8,7 +8,6 @@ const fetchMarkdown = async () => {
   try {
     const response = await fetch('/markdown')
     const data = await response.json();
-    textarea.value = data.content;
     preview.innerHTML = marked(data.content);
   } catch (err) {
     console.error('error fetching markdown: ', err);
