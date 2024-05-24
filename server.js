@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // server.js
 
 const express = require('express');
@@ -10,11 +11,17 @@ const marked = require('marked');
 const app = express();
 const PORT = 9999;
 
+const fileName = process.argv[2];
+
 // set path to file passed as argument
-// const filePath = path.join(__dirname, process.argv[2]);
+if (!fileName) {
+    console.error('Please provide a path to a markdown file');
+    process.exit(1);
+  }
+const filePath = path.join(process.cwd(), process.argv[2]);
 
 // set path to file
-const filePath = path.join(__dirname, 'sample.md');
+// const filePath = path.join(__dirname, 'sample.md');
 
 let markdownContent = '';
 
