@@ -23,7 +23,8 @@ body {
 
 /* Syntax highlighting */
 #preview h1 {
-    color: #91ADC2;
+    /* color: #91ADC2; */
+    color: #A8C7AF;
 }
 
 #preview h2 {
@@ -37,6 +38,7 @@ body {
 #preview code {
     color: #98c379;
 }
-/* #preview a { */
-/*     color: #61afef; */
-/* } */
+
+#preview a {
+    color: #BB8BA1;
+}
