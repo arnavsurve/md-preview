@@ -19,6 +19,19 @@ body {
     /* background-color: #1A1A1A;  */
     /* color: #abb2bf; */
     border: none !important;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+#preview p {
+    text-indent: -1em;
+    padding-left: 1em;
+    line-height: 1.5;
+}
+
+#preview li {
+    line-height: 1;
 }
 
 /* Syntax highlighting */
@@ -32,11 +45,14 @@ body {
 }
 
 #preview h3 {
-  color: #5FBFB2;
+  color: #779292;
 }
 
 #preview code {
     color: #98c379;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    line-height: 1.5;
 }
 
 #preview a {
